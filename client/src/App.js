@@ -6,7 +6,7 @@ function App() {
   const navigate = useNavigate();
   const [selectedTab, setSelectedTab] = useState("create");
   const [groupLink, setGroupLink] = useState("");
-  const [selectedOption, setSelectedOption] = useState("discord");
+  const [selectedOption, setSelectedOption] = useState("telegram");
 
 
 
