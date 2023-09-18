@@ -13,7 +13,7 @@ export const Form = () => {
     const [selectProvider, setSelectProvider] = useState("google-login");
     const [selectOperator, setSelectOperator] = useState("EQ");
     const [selectValue, setSelectValue] = useState("");
-    const [selectScheduler, setSelectScheduler] = useState("");
+    const [selectScheduler, setSelectScheduler] = useState("7");
     const [selectKickScheduler, setSelectKickScheduler] = useState("");
     const [selectKick, setSelectKick] = useState(false);
     const [displayMessage, setDisplayMessage] = useState("");
@@ -247,14 +247,14 @@ export const Form = () => {
                                         <input type="text" required placeholder="Enter Value" value={selectValue} onChange={handleValueChange} class="bg-gray-50 border border-gray-300 text-gray-900 text-xl py-3  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full sm:h-[60px] p-2.5 " />
                                     </div>
                                 </div>
-                                <div class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 justify-center  sm:space-x-4 sm:space-y-0 space-y-2 sm:px-0 items-center sm:items-end">
+                                {/* <div class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 justify-center  sm:space-x-4 sm:space-y-0 space-y-2 sm:px-0 items-center sm:items-end">
                                     <div class="relative flex-grow w-full h-full my-2">
                                         <label for="provider" class="block mb-2 text-xl font-medium ">
                                             Enter Scheduler Timer
                                         </label>
                                         <input type="number" min="1" required placeholder="Enter Number of Days" value={selectScheduler} onChange={handleSchedulerChange} class="bg-gray-50 border border-gray-300 text-gray-900 text-xl py-3  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full sm:h-[60px] p-2.5 " />
                                     </div>
-                                </div>
+                                </div> */}
                                 {(messenger === "discord") && (
                                     <>
                                         <div class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 justify-center  sm:space-x-4 sm:space-y-0 space-y-2 sm:px-0 items-center sm:items-end">
@@ -267,7 +267,7 @@ export const Form = () => {
                                         </div>
                                     </>
                                 )}
-                                <div class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 justify-center  sm:space-x-4 sm:space-y-0 space-y-2 sm:px-0 items-center sm:items-end">
+                                {/* <div class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 justify-center  sm:space-x-4 sm:space-y-0 space-y-2 sm:px-0 items-center sm:items-end">
                                     <div class="relative flex-grow w-full h-full flex my-2">
                                         <label for="enableCheckbox" class="block my-2 mb-2 mr-2 text-xl font-medium">
                                             Enable Kicking Unverified Users
@@ -286,7 +286,7 @@ export const Form = () => {
                                             </div>
                                         </div>
                                     </>
-                                )}
+                                )} */}
                                 <div class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 justify-center  sm:space-x-4 sm:space-y-0 space-y-2 sm:px-0 items-center sm:items-end my-6">
                                     <button
                                         onClick={handleGoBack}
@@ -313,6 +313,9 @@ export const Form = () => {
                                 <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
                                     {displayConfigMessage}
                                 </h1>
+                                <p>
+                                    To get Group Joining Link Run /invite-link command in your Telegram group
+                                </p>
                             </div>
                             <div class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 justify-center  sm:space-x-4 sm:space-y-0 space-y-2 sm:px-0 items-center sm:items-end my-6">
                                 <button

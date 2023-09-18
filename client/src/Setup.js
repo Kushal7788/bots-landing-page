@@ -125,14 +125,14 @@ export const Setup = () => {
                                     <p class="mb-8 hover:underline text-blue-700 text-xl leading-relaxed truncate">
                                         {token}
                                     </p>
-                                    <div class="flex justify-center my-2">
+                                    {/* <div class="flex justify-center my-2">
                                         <button
                                             onClick={() => handleShare(token)}
                                             class="inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg"
                                         >
                                             Copy Token
                                         </button>
-                                    </div>
+                                    </div> */}
                                     <div class="flex justify-center my-2">
                                         <button
                                             onClick={() => getToken()}
@@ -169,7 +169,7 @@ export const Setup = () => {
                                         How to add Bot in Discord
                                     </h1>
                                     <p class="lg:w-2/3 mx-auto  ">
-                                        - Search for @ScanCheckAuthBot to Add Bot as Member of the group
+                                        - Search for @ScamCheckAuthBot to Add Bot as Member of the group
                                     </p>
                                     <p class="lg:w-2/3 mx-auto  ">
                                         - Make Bot Admin of the Group
@@ -187,7 +187,7 @@ export const Setup = () => {
                                         How to add Bot in Telegram
                                     </h1>
                                     <p class="lg:w-2/3 mx-auto  ">
-                                        - Search for @ScanCheckAuthBot to Add Bot as Member of the group
+                                        - Search for @ScamCheckAuthBot to Add Bot as Member of the group
                                     </p>
                                     <p class="lg:w-2/3 mx-auto  ">
                                         - Make Bot Admin of the Group
