@@ -75,14 +75,14 @@ function App() {
                 ScamCheck Bot For all Messenger Apps <br class="hidden lg:inline-block" />A new way to
                 prove Identity using ZK
               </h1>
-              <div class="flex w-full sm:flex-row flex-col mx-auto sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-center sm:items-end">
-                <button value='create' class="flex-1 px-4 py-2 bg-indigo-500 text-white hover:bg-indigo-650" onClick={handleCreateSwitch}>
+              {/* <div class="flex w-full sm:flex-row flex-col mx-auto sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-center sm:items-end"> */}
+                {/* <button value='create' class="flex-1 px-4 py-2 bg-indigo-500 text-white hover:bg-indigo-650" onClick={handleCreateSwitch}>
                   Set up the Bot
-                </button>
+                </button> */}
                 {/* <button value='join' class="flex-1 px-4 py-2 bg-indigo-500 text-white hover:bg-indigo-650  rounded-l-md" onClick={handleJoinSwitch}>
                   Join a Group
                 </button> */}
-              </div>
+              {/* </div> */}
               <div class="flex w-full sm:flex-row flex-col my-6 mx-auto sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-center sm:items-end">
                 {(selectedTab === "join") && (
                   <>
